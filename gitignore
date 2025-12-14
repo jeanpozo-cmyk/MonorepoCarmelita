@@ -1,0 +1,26 @@
+# ------------------------------------------------------------------
+# CONFIGURACIÓN GENERAL
+# ------------------------------------------------------------------
+.DS_Store
+.env
+.env.local
+
+# ------------------------------------------------------------------
+# CARPETA DE FUNCTIONS (BACKEND)
+# ------------------------------------------------------------------
+functions/node_modules/
+functions/dist/        # <--- El código compilado del backend (solo subes el 'src')
+
+# ------------------------------------------------------------------
+# CARPETA DE APP-CORE (Y FUTURAS MINI-APPS)
+# ------------------------------------------------------------------
+app-core/node_modules/
+app-core/dist/         # <--- El build final de Vite
+app-core/temp/
+app-core/.env.local    # <--- Variables de entorno locales de Vite
+
+# ------------------------------------------------------------------
+# VARIABLES DE ENTORNO EN GENERAL (por si las pones en la raíz)
+# ------------------------------------------------------------------
+.env.*.local
+
